@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <link rel="alternate" media="only screen and (max-width: 640px)"> 
+  <title>404 Not Found!</title> 
+  <link href="/images/404-2/index.css" rel="stylesheet"> 
+  <script src="/js/jquery.js"></script> 
+  <script src="/js/Site_Common.js?t=new Date()"></script> 
+ </head> 
+ <body> 
+  <div class="top"> 
+   <div class="top-li"> 
+    <h3>This product is no longer available.</h3> 
+    <div class="searchbox"> 
+     <input name="lname" id="txtSearch" type="text" class="search_input" placeholder="keywords"> 
+     <input type="button" class="search_btn" value="Search" onclick="PSearch()" id="btnSearch"> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="navbox"> 
+   <div class="nav"> 
+    <li><a href="/">Home</a></li> 
+    <li><a href="/about-us">About Us</a></li> 
+    <li><a href="/products" class="current">Products</a></li> 
+    <li><a href="/news">News</a></li> 
+    <li><a href="/contact-us">Contact Us</a></li> 
+    <li><a href="/inquiry">Feedback</a></li> 
+   </div> 
+  </div> 
+  <div class="container"> 
+   <div class="title"> 
+    <h3>You may also be interested in</h3> 
+    <p>We recommend other quality products for you.</p> 
+   </div> 
+   <div class="main3-box"> 
+    <div id="marquee1"> 
+     <ul> 
+      <li>
+       <div class="yeji"> 
+        <div class="yeji-num">
+         <a href="http://www.smartcoolproduct.nl/smart-wear/wearable-devices-for-sports/wireless-sport-earphone-miniforsport.html"><img src="/Content/File_Img/S_Product/small/2016-09-05/201609051600567937496.jpg"></a>
+        </div> 
+        <div class="yeji-name">
+         Draadloze sport oortelefoon 
+        </div> 
+       </div></li> 
+      <li>
+       <div class="yeji"> 
+        <div class="yeji-num">
+         <a href="http://www.smartcoolproduct.nl/smart-magnetic-usb-cable/wireless-earphones-new-style-oem-orderswelcomed.html"><img src="/Content/File_Img/S_Product/small/2016-09-05/201609051557303763863.jpg"></a>
+        </div> 
+        <div class="yeji-name">
+         Draadloze oortelefoons, nieuwe stijl, OEM Orders ontvangen 
+        </div> 
+       </div></li> 
+      <li>
+       <div class="yeji"> 
+        <div class="yeji-num">
+         <a href="http://www.smartcoolproduct.nl/smart-wear/wearable-devices-for-sports/swimming-earphones-stylish-design.html"><img src="/uploads/201710573/small/p201706030939527210177.jpg"></a>
+        </div> 
+        <div class="yeji-name">
+         UCero ZWEMMING 100% waterdichte Sport Draadloze Koptelefoon Stijlvol Design, 4,1 Bluetooth met Multi-Point Functie
+        </div> 
+       </div></li> 
+      <li>
+       <div class="yeji"> 
+        <div class="yeji-num">
+         <a href="http://www.smartcoolproduct.nl/smart-magnetic-usb-cable/2nd-generation-magnetic-cable-including-type-c/magnetic-cable-fit-for-micro-ios-and-type-c.html"><img src="/Content/File_Img/S_Product/small/2016-07-01/201607012030383630405.jpg"></a>
+        </div> 
+        <div class="yeji-name">
+         Slimme Magnetische Kabel Geschikt voor Micro, IOS en Type-C
+        </div> 
+       </div></li> 
+     </ul> 
+    </div> 
+   </div> 
+   <div class="title"> 
+    <h3>Contact us</h3> 
+    <p>Please do not hesitate to contact us.</p> 
+   </div> 
+   <div class="feedbackForm"> 
+    <input id="SubmitName" name="SubmitName" class="text" maxlength="40" placeholder="Your Name"> 
+    <input id="SubmitEmail" name="SubmitEmail" class="text" maxlength="50" placeholder="Please input your email here, it is very important!"> 
+    <input id="SubmitPhone" name="SubmitPhone" class="text" maxlength="40" placeholder="Phone"> 
+    <input id="SubmitCompanyName" name="SubmitCompanyName" class="text" maxlength="140" placeholder="Company"> 
+    <input id="SubmitTitle" name="SubmitTitle" class="text" maxlength="340" placeholder="Title"> 
+    <textarea name="SubmitContent" id="SubmitContent" class="atextarea" cols="50" rows="5" maxlength="2000" placeholder="Please include details like size, weight, destination port and ect., so that we can quote the best price."></textarea> 
+    <div class="button">
+     <button class="submita" id="ImgSend">Send</button>
+    </div> 
+   </div> 
+  </div> 
+  <div class="foot"> 
+   <div class="foot-nav"> 
+    <a href="/">Home</a>
+    <a href="/about-us">About Us</a>
+    <a href="/products">Products</a> 
+    <a href="/news">News</a>
+    <a href="/contact-us">Contact Us</a>
+    <a href="/inquiry">Feedback</a> 
+   </div> 
+  </div> 
+  <script>
+        if (location.href.indexOf("?fast=1") > -1) {
+            alert("Your search frequency is too high, please slow down");
+        }
+        function FixJqText(str) {
+            //str=encodeURIComponent(str);
+            var tempstr = str.replace(/\+/g, "＋");
+            //tempstr = tempstr.replace(/\&/g, "&amp;");
+            return tempstr;
+        }
+        function ClearForm() {
+            $("#SubmitEmail").val("");
+            $("#SubmitPhone").val("");
+            $("#SubmitContent").val("");
+        }
+        $("#ImgSend").click(function () {
+            var _email = $.trim($("#SubmitEmail").val());
+            var _content = $.trim($("#SubmitContent").val());
+            var _tel = $.trim($("#SubmitPhone").val());
+
+            if (_email == "") {
+                alert("Please enter the email");
+                return false;
+            }
+            var mail_filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if (!mail_filter.test(_email)) {
+                alert("Please enter a valid email format");
+                return false;
+            }
+
+            if (_content == "") {
+                alert("Please enter the content");
+                return false;
+            }
+            var vName = escape(FixJqText($("#SubmitName").val()));
+            var vCompany = escape(FixJqText($("#SubmitCompanyName").val()));
+            var vEmail = escape(FixJqText(_email));
+            var vTel = escape(FixJqText(_tel));
+            var vTitle = escape(FixJqText($("#SubmitTitle").val()));
+            var vContent = escape(FixJqText(_content));
+
+
+            //if(_content.length>1000){alert("输入过长");return;}
+            //   function (url, parameters, functionName)
+
+            $(this).attr("disabled", "disabled");
+            $.ajax({
+                type: "POST",
+                url: "/OutOpen/AddInquiry",
+                data: {
+                    name: vName,
+                    company: vCompany,
+                    phone: vTel,
+                    email: vEmail,
+                    content: vContent,
+                    pageUrl: document.URL,
+                    title: vTitle,
+                    proId: 0
+                },
+                dataType: "json",
+                error: function () {
+                    // alert($lang.msgSendFailed);
+                    alert("Mail has been sent successfully, we will contact you later!");
+                    ClearForm();
+                },
+                success: function (data) {
+                    $(this).removeAttr("disabled");
+                    if (data == "1") {
+                        //alert($lang.msgSendSucess);
+                        alert("Mail has been sent successfully, we will contact you later!");
+                        ClearForm();
+                    } else if (data == "2") {
+                        // alert($lang.msgSameContent);
+                        alert("Mail has been sent successfully, we will contact you later!");
+                    } else {
+                        // alert($lang.msgSendFailed);
+                        alert("Mail has been sent successfully, we will contact you later!");
+                    }
+                },
+                async: false
+
+            });
+        });
+    </script>   
+ </body>
+</html>
